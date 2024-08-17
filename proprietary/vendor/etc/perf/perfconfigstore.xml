@@ -62,25 +62,25 @@ ________________________________________________________________________________
 
                 <!--System Properties -->
                 <Prop Name="ro.lmk.kill_heaviest_task_dup" Value="true" />
-                <Prop Name="ro.lmk.kill_timeout_ms_dup" Value="100" />
-                <Prop Name="ro.lmk.thrashing_threshold" Value="30" />
+                <Prop Name="ro.lmk.kill_timeout_ms_dup" Value="350" />
+                <Prop Name="ro.lmk.thrashing_threshold" Value="32" />
                 <Prop Name="ro.lmk.thrashing_decay" Value="5" />
                 <Prop Name="ro.lmk.nstrat_low_swap" Value="10" />
                 <Prop Name="ro.lmk.nstrat_psi_partial_ms" Value="70" />
                 <Prop Name="ro.lmk.nstrat_psi_complete_ms" Value="70" />
-                <Prop Name="ro.lmk.psi_scrit_complete_stall_ms" Value="150" />
+                <Prop Name="ro.lmk.psi_scrit_complete_stall_ms" Value="400" />
                 <Prop Name="ro.lmk.nstrat_wmark_boost_factor" Value="4" />
                 <Prop Name="ro.lmk.enable_watermark_check" Value="true" />
-		<Prop Name="ro.lmk.super_critical" Value="701" />
+		<Prop Name="ro.lmk.super_critical" Value="850" />
                 <Prop Name="ro.lmk.use_new_strategy_dup" Value="true" />
                 <Prop Name="ro.lmk.nandswap_version" Value="2" />
 
                 <!--#ifndef  OPLUS_FEATURE_PERFORMANCE-->
                 <!--MoSiTing@ANDROID.PERFORMANCE, 2020/07/09, Modify for Increase cached app limit -->
-                <!--Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="96" /-->
+                <!--Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="128" /-->
                 <!--#else-->
-                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="128" />
-                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="128" Target="shima" />
+                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="224" />
+                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="224" Target="shima" />
                 <!--#endif /* OPLUS_FEATURE_PERFORMANCE */ -->
 
                 <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
