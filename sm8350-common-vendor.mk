@@ -1281,7 +1281,6 @@ PRODUCT_PACKAGES += \
     adsprpcd \
     cdsprpcd \
     cnd \
-    cnss-daemon \
     diag-router \
     dpmQmiMgr \
     dspservice \
