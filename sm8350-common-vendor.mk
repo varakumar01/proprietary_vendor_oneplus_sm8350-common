@@ -1302,6 +1302,7 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot \
     init.qcom.sensors \
     init.qti.chg_policy \
+    init.qti.kernel \
     init.qti.media \
     init.qti.qcv \
     irsc_util \
