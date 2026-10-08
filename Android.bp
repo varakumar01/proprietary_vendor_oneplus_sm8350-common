@@ -17,802 +17,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "libFileMux_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libFileMux_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmm-hdcpmgr",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmm-hdcpmgr.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmrtpdecoder_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmrtpdecoder_proprietary.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libmmosal_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmrtpencoder_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmrtpencoder_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdcodecv4l2_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfdcodecv4l2_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libwfdcommonutils_proprietary",
-                "libwfdmminterface_proprietary",
-                "libwfdutils_proprietary",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdcommonutils_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfdcommonutils_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libion",
-                "libprocessgroup",
-                "libwfddisplayconfig_proprietary",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdconfigutils_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfdconfigutils_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libnl",
-                "libwfdmminterface_proprietary",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfddisplayconfig_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfddisplayconfig_proprietary.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "vendor.display.config@2.0",
-                "libdisplayconfig.qti",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdhdcpcp",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfdhdcpcp.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdhdcpservice_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfdhdcpservice_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libwfdhdcpcp",
-                "libc++",
-                "libclang_rt.ubsan_standalone",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdmminterface_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfdmminterface_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdmmservice_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfdmmservice_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdmmsrc_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfdmmsrc_proprietary.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libmmrtpencoder_proprietary",
-                "libFileMux_proprietary",
-                "libcutils",
-                "libtinyalsa",
-                "libwfdcommonutils_proprietary",
-                "libwfdutils_proprietary",
-                "libwfdconfigutils_proprietary",
-                "libwfdaac_vendor",
-                "libpng",
-                "libwfdmminterface_proprietary",
-                "libwfdcodecv4l2_proprietary",
-                "libwfdmmservice_proprietary",
-                "libhidlbase",
-                "android.hardware.graphics.mapper@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdmodulehdcpsession",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfdmodulehdcpsession.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libwfdhdcpcp",
-                "libwfdcommonutils_proprietary",
-                "libhidlbase",
-                "libwfdutils_proprietary",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdrtsp_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfdrtsp_proprietary.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "libutils",
-                "libmmosal_vendor",
-                "libwfdcommonutils_proprietary",
-                "libwfdconfigutils_proprietary",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdsessionmodule",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfdsessionmodule.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libwfdsourcesession_proprietary",
-                "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
-                "libwfdcommonutils_proprietary",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdsourcesession_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfdsourcesession_proprietary.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libmmosal_vendor",
-                "libwfdcommonutils_proprietary",
-                "libwfdconfigutils_proprietary",
-                "libwfdmminterface_proprietary",
-                "libmedia_helper",
-                "libwfdmmsrc_proprietary",
-                "libqdMetaData",
-                "libhidlbase",
-                "libwfdsourcesm_proprietary",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdsourcesm_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfdsourcesm_proprietary.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "libutils",
-                "libwfdrtsp_proprietary",
-                "libmmrtpencoder_proprietary",
-                "libmmrtpdecoder_proprietary",
-                "libwfduibcinterface_proprietary",
-                "libwfdmmsrc_proprietary",
-                "libmmosal_vendor",
-                "libwfdcommonutils_proprietary",
-                "libwfdconfigutils_proprietary",
-                "libqdMetaData",
-                "libwfdmminterface_proprietary",
-                "libwfdmodulehdcpsession",
-                "libhidlbase",
-                "libwfddisplayconfig_proprietary",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfduibcinterface_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfduibcinterface_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libwfduibcsrcinterface_proprietary",
-                "libwfduibcsinkinterface_proprietary",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfduibcsink_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfduibcsink_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfduibcsinkinterface_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfduibcsinkinterface_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libwfduibcsink_proprietary",
-                "libwfdcommonutils_proprietary",
-                "libwfdconfigutils_proprietary",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfduibcsrc_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfduibcsrc_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "libwfdcommonutils_proprietary",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libwfdconfigutils_proprietary",
-                "libwfddisplayconfig_proprietary",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfduibcsrcinterface_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfduibcsrcinterface_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libwfduibcsrc_proprietary",
-                "libwfdcommonutils_proprietary",
-                "libwfdconfigutils_proprietary",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdutils_proprietary",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwfdutils_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
-    stem: "vendor.qti.hardware.wifidisplaysession@1.0",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "libcutils",
-                "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
-                "libwfdsessionmodule",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "btaudio_offload_if",
     owner: "oneplus",
     strip: {
@@ -2349,6 +1553,34 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.display.mapperextensions@1.0",
                 "vendor.qti.hardware.display.mapperextensions@1.1",
                 "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libFileMux_proprietary",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libFileMux_proprietary.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -5283,7 +4515,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libmmosal_vendor",
-    stem: "libmmosal",
     owner: "oneplus",
     strip: {
         none: true,
@@ -5291,12 +4522,68 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libmmosal.so",
+                "proprietary/vendor/lib64/libmmosal_vendor.so",
             ],
             shared_libs: [
                 "libutils",
                 "libcutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmrtpdecoder_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmmrtpdecoder_vendor.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libmmosal_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmrtpencoder_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmmrtpencoder_vendor.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -8275,6 +7562,639 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libwfdcodecv4l2_proprietary",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdcodecv4l2_proprietary.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libwfdcommonutils_proprietary",
+                "libwfdmminterface_proprietary",
+                "libwfdutils_proprietary",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdcommonutils_proprietary",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdcommonutils_proprietary.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libion",
+                "libprocessgroup",
+                "libwfddisplayconfig_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdconfigutils_proprietary",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdconfigutils_proprietary.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libnl",
+                "libwfdmminterface_proprietary",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfddisplayconfig_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfddisplayconfig_vendor.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "vendor.display.config@2.0",
+                "libdisplayconfig.qti",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdhdcpcp",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdhdcpcp.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libwfdutils_proprietary",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdhdcpservice_proprietary",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdhdcpservice_proprietary.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libwfdhdcpcp",
+                "libc++",
+                "libclang_rt.ubsan_standalone",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdmminterface_proprietary",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdmminterface_proprietary.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdmmservice_proprietary",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdmmservice_proprietary.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdmmsrc_proprietary",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdmmsrc_proprietary.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libmmrtpencoder_vendor",
+                "libFileMux_proprietary",
+                "libcutils",
+                "libtinyalsa",
+                "libwfdcommonutils_proprietary",
+                "libwfdutils_proprietary",
+                "libwfdconfigutils_proprietary",
+                "libwfdaac_vendor",
+                "libpng",
+                "libwfdmminterface_proprietary",
+                "libwfdcodecv4l2_proprietary",
+                "libwfdmmservice_proprietary",
+                "libhidlbase",
+                "qti.video.utils.videobufferlayout",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.audio@7.0",
+                "android.hardware.audio.common@7.0",
+                "android.hardware.audio.common@7.0-enums",
+                "libfmq",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdmodulehdcpsession",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdmodulehdcpsession.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libwfdhdcpcp",
+                "libwfdcommonutils_proprietary",
+                "libhidlbase",
+                "libwfdutils_proprietary",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdrtsp_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdrtsp_vendor.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "libutils",
+                "libmmosal_vendor",
+                "libwfdcommonutils_proprietary",
+                "libwfdconfigutils_proprietary",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdsessionmodule",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdsessionmodule.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libwfdsourcesession_proprietary",
+                "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
+                "libwfdcommonutils_proprietary",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdsourcesession_proprietary",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdsourcesession_proprietary.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libmmosal_vendor",
+                "libwfdcommonutils_proprietary",
+                "libwfdconfigutils_proprietary",
+                "libwfdmminterface_proprietary",
+                "libmedia_helper",
+                "libwfdmmsrc_proprietary",
+                "libhidlbase",
+                "libwfdsourcesm_proprietary",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdsourcesm_proprietary",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdsourcesm_proprietary.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "libutils",
+                "libwfdrtsp_vendor",
+                "libmmrtpencoder_vendor",
+                "libmmrtpdecoder_vendor",
+                "libwfduibcinterface_vendor",
+                "libwfdmmsrc_proprietary",
+                "libmmosal_vendor",
+                "libwfdcommonutils_proprietary",
+                "libwfdconfigutils_proprietary",
+                "libwfdmminterface_proprietary",
+                "libwfdmodulehdcpsession",
+                "libhidlbase",
+                "libwfddisplayconfig_vendor",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcinterface_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfduibcinterface_vendor.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libwfduibcsrcinterface_vendor",
+                "libwfduibcsinkinterface_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcsink_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfduibcsink_vendor.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcsinkinterface_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfduibcsinkinterface_vendor.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libwfduibcsink_vendor",
+                "libwfdcommonutils_proprietary",
+                "libwfdconfigutils_proprietary",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcsrc_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfduibcsrc_vendor.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "libwfdcommonutils_proprietary",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libwfdconfigutils_proprietary",
+                "libwfddisplayconfig_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcsrcinterface_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfduibcsrcinterface_vendor.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libwfduibcsrc_vendor",
+                "libwfdcommonutils_proprietary",
+                "libwfdconfigutils_proprietary",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdutils_proprietary",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdutils_proprietary.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libbase",
+                "libion",
+                "libdmabufheap",
+                "libvmmem",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwms",
     owner: "oneplus",
     strip: {
@@ -8504,6 +8424,32 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/qcrild_libqcrilnrutils.so",
             ],
             shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "qti.video.utils.videobufferlayout",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/qti.video.utils.videobufferlayout.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -11225,6 +11171,66 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
+    stem: "vendor.qti.hardware.wifidisplaysession@1.0",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libutils",
+                "libcutils",
+                "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
+                "libwfdsessionmodule",
+                "liblog",
+                "libwfdcommonutils_proprietary",
                 "libc++",
                 "libc",
                 "libm",
@@ -16659,7 +16665,7 @@ cc_prebuilt_binary {
     name: "wfdhdcphalservice",
     owner: "oneplus",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/wfdhdcphalservice",
             ],
@@ -16681,16 +16687,15 @@ cc_prebuilt_binary {
                 "libwfdhdcpservice_proprietary",
                 "libwfdcommonutils_proprietary",
                 "libwfdutils_proprietary",
-                "libqdMetaData",
                 "libavservices_minijail",
-                "libwfddisplayconfig_proprietary",
+                "libwfddisplayconfig_vendor",
                 "libc",
                 "libm",
                 "libdl",
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },
@@ -16702,7 +16707,7 @@ cc_prebuilt_binary {
     name: "wfdvndservice",
     owner: "oneplus",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/wfdvndservice",
             ],
@@ -16719,7 +16724,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },
@@ -16731,7 +16736,7 @@ cc_prebuilt_binary {
     name: "wifidisplayhalservice",
     owner: "oneplus",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/wifidisplayhalservice",
             ],
@@ -16750,7 +16755,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },
