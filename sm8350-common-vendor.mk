@@ -1324,7 +1324,6 @@ PRODUCT_PACKAGES += \
     shsusrd \
     slim_daemon \
     sscrpcd \
-    ssgqmigd \
     ssgtzd \
     tftp_server \
     thermal-engine \
