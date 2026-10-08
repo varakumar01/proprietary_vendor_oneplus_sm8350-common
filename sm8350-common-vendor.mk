@@ -738,7 +738,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libFileMux_proprietary \
-    libadm \
     libmm-hdcpmgr \
     libmmrtpdecoder_proprietary \
     libmmrtpencoder_proprietary \
@@ -823,6 +822,7 @@ PRODUCT_PACKAGES += \
     libacdbloader \
     libacdbrtac \
     libadiertac \
+    libadm \
     libadreno_app_profiles \
     libadreno_utils \
     libadsp_default_listener \
