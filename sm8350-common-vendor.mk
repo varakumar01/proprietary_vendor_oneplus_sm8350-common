@@ -738,36 +738,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libFileMux_proprietary \
-    libacdb-fts \
-    libacdbloader \
-    libacdbrtac \
-    libadiertac \
     libadm \
-    libaudcal \
-    libaudio_log_utils \
-    libaudioparsers \
-    libcapiv2svacnn \
-    libcapiv2svarnn \
-    libcapiv2vop \
-    libgcs-calwrapper \
-    libgcs-ipc \
-    libgcs-osal \
-    libgcs \
-    libhdmipassthru \
-    liblistensoundmodel2 \
     libmm-hdcpmgr \
     libmmrtpdecoder_proprietary \
     libmmrtpencoder_proprietary \
-    libmulawdec \
-    libqc2vppfilter \
-    libqcodec2_base \
-    libqcodec2_basecodec \
-    libqcodec2_core \
-    libqcodec2_hooks \
-    libqcodec2_platform \
-    libqcodec2_utils \
-    libqcodec2_v4l2codec \
-    libqtigef_vendor \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
     libwfdconfigutils_proprietary \
@@ -788,11 +762,6 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc_proprietary \
     libwfduibcsrcinterface_proprietary \
     libwfdutils_proprietary \
-    libasphere \
-    libqcbassboost \
-    libqcreverb \
-    libqcvirt \
-    libshoebox \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     btaudio_offload_if \
@@ -850,6 +819,10 @@ PRODUCT_PACKAGES += \
     libQTEEConnector_listener \
     libQTEEConnector_vendor \
     libVkLayer_q3dtools \
+    libacdb-fts \
+    libacdbloader \
+    libacdbrtac \
+    libadiertac \
     libadreno_app_profiles \
     libadreno_utils \
     libadsp_default_listener \
@@ -858,12 +831,18 @@ PRODUCT_PACKAGES += \
     libasn1cper \
     libasn1crt \
     libasn1crtx \
+    libaudcal \
+    libaudio_log_utils \
+    libaudioparsers \
     libbatching \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
     libbtnv \
     libc2d30_bltlib \
     libcacertclient \
+    libcapiv2svacnn \
+    libcapiv2svarnn \
+    libcapiv2vop \
     libcdfw \
     libcdfw_remote_api \
     libcdsp_default_listener \
@@ -892,6 +871,10 @@ PRODUCT_PACKAGES += \
     libdsutils \
     libfastcvdsp_stub \
     libfastcvopt \
+    libgcs-calwrapper \
+    libgcs-ipc \
+    libgcs-osal \
+    libgcs \
     libgdtap \
     libgeofencing \
     libgnss \
@@ -899,6 +882,7 @@ PRODUCT_PACKAGES += \
     libgps.utils \
     libgpudataproducer \
     libgsl \
+    libhdmipassthru \
     libhdr_tm \
     libhistogram \
     libidl \
@@ -911,6 +895,7 @@ PRODUCT_PACKAGES += \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
+    liblistensoundmodel2 \
     libllvm-glnext \
     libllvm-qcom \
     libloc_api_v02 \
@@ -927,6 +912,7 @@ PRODUCT_PACKAGES += \
     libminkdescriptor \
     libminksocket \
     libmmosal_vendor \
+    libmulawdec \
     libnetmgr \
     libnetmgr_common \
     libnetmgr_nr_fusion \
@@ -938,9 +924,17 @@ PRODUCT_PACKAGES += \
     libperipheral_client \
     libpwirisfeature \
     libpwirishalwrapper \
+    libqc2vppfilter \
     libqcbor \
     libqcc_file_agent \
     libqcmaputils \
+    libqcodec2_base \
+    libqcodec2_basecodec \
+    libqcodec2_core \
+    libqcodec2_hooks \
+    libqcodec2_platform \
+    libqcodec2_utils \
+    libqcodec2_v4l2codec \
     libqconfigclient \
     libqcrilNr \
     libqcrilNrFramework \
@@ -967,6 +961,7 @@ PRODUCT_PACKAGES += \
     libqrtrclient \
     libqseed3 \
     libqsocket \
+    libqtigef_vendor \
     libqtikeymaster4 \
     librcc \
     librcmask \
@@ -1027,6 +1022,11 @@ PRODUCT_PACKAGES += \
     qtiril-utils \
     qtiwakelock \
     sensors.ssc \
+    libasphere \
+    libqcbassboost \
+    libqcreverb \
+    libqcvirt \
+    libshoebox \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -1211,13 +1211,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
+    lib-virtual-modem-protos \
     libaiboost_qnn_sr \
     libaiboost_sr \
     libaiboost_ubwc \
-    liboplusvppfilter \
-    libosie_process \
-    libosie_stub \
-    lib-virtual-modem-protos \
     libbluetooth_audio_extend_factory_client \
     libc++_shared \
     libcommcenterfw \
@@ -1226,6 +1223,9 @@ PRODUCT_PACKAGES += \
     libdmtpclient \
     liboemcrypto \
     liboplus_service \
+    liboplusvppfilter \
+    libosie_process \
+    libosie_stub \
     libpwirisIoctlWrapper \
     libpwirisPCS \
     libpwiriscalibrate \
