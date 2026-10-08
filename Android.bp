@@ -15604,7 +15604,7 @@ cc_prebuilt_binary {
     name: "vendor.qti.media.c2@1.0-service",
     owner: "oneplus",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service",
             ],
@@ -15628,7 +15628,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },
