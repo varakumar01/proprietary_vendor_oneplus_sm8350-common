@@ -873,6 +873,7 @@ PRODUCT_PACKAGES += \
     liblistensoundmodel2 \
     libllvm-glnext \
     libllvm-qcom \
+    libllvm-qgl \
     libloc_api_v02 \
     libloc_core \
     libloc_socket \
