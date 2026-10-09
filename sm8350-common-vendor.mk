@@ -635,8 +635,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/qdcm_calib_data_samsung_ams662zs01_fhd_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_ams662zs01_fhd_cmd_mode_dsc_dsi_panel.xml \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
-    vendor/oneplus/sm8350-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
-    vendor/oneplus/sm8350-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy \
@@ -732,146 +732,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/oneplus/sm8350-common/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
-    vendor/oneplus/sm8350-common/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/oneplus/sm8350-common/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
     vendor/oneplus/sm8350-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin
 
 PRODUCT_PACKAGES += \
     btaudio_offload_if \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libq3dtools_adreno \
-    libq3dtools_esx \
-    android.hardware.bluetooth@1.0-impl-qti \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
-    vendor.qti.hardware.bluetooth_sar@1.1-impl \
-    vendor.qti.hardware.btconfigstore@1.0-impl \
-    vendor.qti.hardware.btconfigstore@2.0-impl \
-    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
-    vulkan.adreno \
-    libC2D2 \
-    libCB \
-    libOpenCL \
-    libVkLayer_q3dtools \
-    libadreno_app_profiles \
-    libadreno_utils \
-    libadsprpc \
-    libbluetooth_audio_session_qti \
-    libbluetooth_audio_session_qti_2_1 \
-    libbtnv \
-    libc2d30_bltlib \
-    libcdsp_default_listener \
-    libcdsprpc \
-    libconfigdb \
-    libcvp2_1 \
-    libcvp_common \
-    libdiag \
-    libdsi_netctrl \
-    libdsutils \
-    libfastcvdsp_stub \
-    libfastcvopt \
-    libgpudataproducer \
-    libgsl \
-    libidl \
-    libkcl \
-    libkernelmanager \
-    libllvm-glnext \
-    libllvm-qcom \
-    libmdmdetect \
-    libmdsprpc \
-    libmmosal_vendor \
-    libnetmgr \
-    libqcmaputils \
-    libqconfigclient \
-    libqdi \
-    libqdp \
-    libqmi \
-    libqmi_cci \
-    libqmi_client_helper \
-    libqmi_client_qmux \
-    libqmi_common_so \
-    libqmi_csi \
-    libqmi_encdec \
-    libqmi_legacy \
-    libqmiservices \
-    libscveCommon \
-    libscveCommon_stub \
-    libscveObjectSegmentation \
-    libscveObjectSegmentation_stub \
-    libscveObjectTracker \
-    libscveObjectTracker_stub \
-    libsdsprpc \
-    libsoc_helper \
-    libthermalclient \
-    libxml \
-    vendor.qti.diaghal@1.0_vendor \
-    vendor.qti.hardware.bluetooth_sar@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.1 \
-    vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.qconfig@1.0 \
-    vendor.qti.hardware.vpp@2.0 \
-    vendor.qti.qspmhal@1.0 \
-    libFileMux_proprietary \
-    libacdb-fts \
-    libacdbloader \
-    libacdbrtac \
-    libadiertac \
-    libadm \
-    libaudcal \
-    libaudio_log_utils \
-    libaudioparsers \
-    libcapiv2svacnn \
-    libcapiv2svarnn \
-    libcapiv2vop \
-    libgcs-calwrapper \
-    libgcs-ipc \
-    libgcs-osal \
-    libgcs \
-    libhdmipassthru \
-    liblistensoundmodel2 \
-    libmm-hdcpmgr \
-    libmmrtpdecoder_proprietary \
-    libmmrtpencoder_proprietary \
-    libmulawdec \
-    libqc2vppfilter \
-    libqcodec2_base \
-    libqcodec2_basecodec \
-    libqcodec2_core \
-    libqcodec2_hooks \
-    libqcodec2_platform \
-    libqcodec2_utils \
-    libqcodec2_v4l2codec \
-    libqtigef_vendor \
-    libwfdcodecv4l2_proprietary \
-    libwfdcommonutils_proprietary \
-    libwfdconfigutils_proprietary \
-    libwfddisplayconfig_proprietary \
-    libwfdhdcpcp \
-    libwfdhdcpservice_proprietary \
-    libwfdmminterface_proprietary \
-    libwfdmmservice_proprietary \
-    libwfdmmsrc_proprietary \
-    libwfdmodulehdcpsession \
-    libwfdrtsp_proprietary \
-    libwfdsessionmodule \
-    libwfdsourcesession_proprietary \
-    libwfdsourcesm_proprietary \
-    libwfduibcinterface_proprietary \
-    libwfduibcsink_proprietary \
-    libwfduibcsinkinterface_proprietary \
-    libwfduibcsrc_proprietary \
-    libwfduibcsrcinterface_proprietary \
-    libwfdutils_proprietary \
-    libasphere \
-    libqcbassboost \
-    libqcreverb \
-    libqcvirt \
-    libshoebox \
-    vendor.qti.hardware.wifidisplaysession@1.0_vendor \
-    vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
@@ -882,15 +747,29 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
     deviceInfoServiceModuleNr \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libq3dtools_adreno \
+    libq3dtools_esx \
+    android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
     com.dsi.ant@1.0-impl \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.1-impl \
+    vendor.qti.hardware.bluetooth_sar@1.1-impl \
+    vendor.qti.hardware.btconfigstore@1.0-impl \
+    vendor.qti.hardware.btconfigstore@2.0-impl \
+    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
+    vulkan.adreno \
     lib-imscommon \
     lib-imsdpl \
     lib-imsqimf \
@@ -901,30 +780,58 @@ PRODUCT_PACKAGES += \
     lib-rtpcommon \
     lib-rtpcore \
     lib-rtpsl \
+    libC2D2 \
+    libCB \
+    libFileMux_proprietary \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
+    libOpenCL \
     libQSEEComAPI \
     libQTEEConnector_listener \
     libQTEEConnector_vendor \
+    libacdb-fts \
+    libacdbloader \
+    libacdbrtac \
+    libadiertac \
+    libadm \
+    libadreno_app_profiles \
+    libadreno_utils \
     libadsp_default_listener \
+    libadsprpc \
     libaoa \
     libasn1cper \
     libasn1crt \
     libasn1crtx \
+    libaudcal \
+    libaudio_log_utils \
+    libaudioparsers \
     libbatching \
+    libbluetooth_audio_session_qti \
+    libbluetooth_audio_session_qti_2_1 \
+    libbtnv \
+    libc2d30_bltlib \
     libcacertclient \
+    libcapiv2svacnn \
+    libcapiv2svarnn \
+    libcapiv2vop \
     libcdfw \
     libcdfw_remote_api \
+    libcdsp_default_listener \
+    libcdsprpc \
     libcne \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
+    libconfigdb \
     libcpion \
+    libcvp2_1 \
+    libcvp_common \
     libcvpcpuRev_skel \
     libcwb_sm8350 \
     libdataitems \
+    libdiag \
     libdisp-aba \
     libdisplayconfig.qti \
     libdisplayqos \
@@ -933,20 +840,38 @@ PRODUCT_PACKAGES += \
     libdpps \
     libdrmfs \
     libdrmtime \
+    libdsi_netctrl \
+    libdsutils \
+    libfastcvdsp_stub \
+    libfastcvopt \
+    libgcs-calwrapper \
+    libgcs-ipc \
+    libgcs-osal \
+    libgcs \
     libgdtap \
     libgeofencing \
     libgnss \
     libgnsspps \
     libgps.utils \
+    libgpudataproducer \
+    libgsl \
+    libhdmipassthru \
     libhdr_tm \
     libhistogram \
+    libidl \
     libizat_client_api \
     libizat_core \
     libjnihelper \
+    libkcl \
+    libkernelmanager \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
+    liblistensoundmodel2 \
+    libllvm-glnext \
+    libllvm-qcom \
+    libllvm-qgl \
     libloc_api_v02 \
     libloc_core \
     libloc_socket \
@@ -956,8 +881,15 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_wifihal \
     liblqe \
+    libmdmdetect \
+    libmdsprpc \
     libminkdescriptor \
     libminksocket \
+    libmmosal_vendor \
+    libmmrtpdecoder_vendor \
+    libmmrtpencoder_vendor \
+    libmulawdec \
+    libnetmgr \
     libnetmgr_common \
     libnetmgr_nr_fusion \
     libnetmgr_rmnet_ext \
@@ -968,8 +900,18 @@ PRODUCT_PACKAGES += \
     libperipheral_client \
     libpwirisfeature \
     libpwirishalwrapper \
+    libqc2vppfilter \
     libqcbor \
     libqcc_file_agent \
+    libqcmaputils \
+    libqcodec2_base \
+    libqcodec2_basecodec \
+    libqcodec2_core \
+    libqcodec2_hooks \
+    libqcodec2_platform \
+    libqcodec2_utils \
+    libqcodec2_v4l2codec \
+    libqconfigclient \
     libqcrilNr \
     libqcrilNrFramework \
     libqcrilNrLogger \
@@ -977,13 +919,25 @@ PRODUCT_PACKAGES += \
     libqcrilNrQtiMutex \
     libqcrildatactl \
     libqdcm-mode-parser \
+    libqdi \
     libqdma_file_agent \
+    libqdp \
     libqdutils \
     libqisl \
+    libqmi \
+    libqmi_cci \
+    libqmi_client_helper \
+    libqmi_client_qmux \
+    libqmi_common_so \
+    libqmi_csi \
+    libqmi_encdec \
+    libqmi_legacy \
+    libqmiservices \
     libqrtr \
     libqrtrclient \
     libqseed3 \
     libqsocket \
+    libqtigef_vendor \
     libqtikeymaster4 \
     librcc \
     librcmask \
@@ -993,6 +947,12 @@ PRODUCT_PACKAGES += \
     librilqmimiscservices \
     librilqmiservices \
     librpmb \
+    libscveCommon \
+    libscveCommon_stub \
+    libscveObjectSegmentation \
+    libscveObjectSegmentation_stub \
+    libscveObjectTracker \
+    libscveObjectTracker_stub \
     libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
@@ -1001,6 +961,7 @@ PRODUCT_PACKAGES += \
     libsdmcore \
     libsdmextension \
     libsdmutils \
+    libsdsprpc \
     libsensorcal \
     libsensorslog \
     libslimclient \
@@ -1011,6 +972,7 @@ PRODUCT_PACKAGES += \
     libsns_low_lat_stream_stub \
     libsnsapi \
     libsnsdiaglog \
+    libsoc_helper \
     libspcom \
     libspl \
     libssc \
@@ -1018,22 +980,50 @@ PRODUCT_PACKAGES += \
     libssd \
     libsynergy_loc_api \
     libsystem_health_mon \
+    libthermalclient \
     libtime_genoff \
     libtinyxml2_1 \
     libtrustedapploader \
     libvpphcp \
     libvpphvx \
     libvpplibrary \
+    libwfdcodecv4l2_proprietary \
+    libwfdcommonutils_proprietary \
+    libwfdconfigutils_proprietary \
+    libwfddisplayconfig_vendor \
+    libwfdhdcpcp \
+    libwfdhdcpservice_proprietary \
+    libwfdmminterface_proprietary \
+    libwfdmmservice_proprietary \
+    libwfdmmsrc_proprietary \
+    libwfdmodulehdcpsession \
+    libwfdrtsp_vendor \
+    libwfdsessionmodule \
+    libwfdsourcesession_proprietary \
+    libwfdsourcesm_proprietary \
+    libwfduibcinterface_vendor \
+    libwfduibcsink_vendor \
+    libwfduibcsinkinterface_vendor \
+    libwfduibcsrc_vendor \
+    libwfduibcsrcinterface_vendor \
+    libwfdutils_proprietary \
     libwms \
     libwqe \
+    libxml \
     libxtadapter \
     libxtwifi_server_protocol \
     libxtwifi_server_protocol_uri_v3 \
     qcrilMarshal \
     qcrild_libqcrilnrutils \
+    qti.video.utils.videobufferlayout \
     qtiril-utils \
     qtiwakelock \
     sensors.ssc \
+    libasphere \
+    libqcbassboost \
+    libqcreverb \
+    libqcvirt \
+    libshoebox \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -1047,6 +1037,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.data.factory@2.3 \
     vendor.qti.data.mwqem@1.0 \
     vendor.qti.data.slm@1.0 \
+    vendor.qti.diaghal@1.0_vendor \
     vendor.qti.gnss@1.0 \
     vendor.qti.gnss@1.1 \
     vendor.qti.gnss@1.2 \
@@ -1056,6 +1047,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.alarm@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.cvp@1.0 \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
@@ -1068,9 +1061,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
+    vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
+    vendor.qti.hardware.qconfig@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.am@1.0 \
@@ -1110,6 +1105,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.hardware.vpp@2.0 \
+    vendor.qti.hardware.wifidisplaysession@1.0_vendor \
+    vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     vendor.qti.ims.callcapability@1.0 \
     vendor.qti.ims.callinfo@1.0 \
     vendor.qti.ims.configservice@1.0 \
@@ -1134,6 +1132,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
+    vendor.qti.qspmhal@1.0 \
     vendor_lib_rfsa_adsp_bm2n06_bin \
     vendor_lib_rfsa_adsp_bm2n08_bin \
     vendor_lib_rfsa_adsp_bm2n12_bin \
@@ -1170,7 +1169,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libvpp_ais_networks_so \
     vendor_lib_rfsa_adsp_libvpt_action_recognition_so \
     vendor_lib_rfsa_adsp_libworker_pool_so \
-    vendor.qti.diaghal@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
@@ -1205,28 +1203,28 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc \
     libwfduibcsrcinterface \
     vendor.qti.ImsRtpService-V1-ndk \
+    vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
-    libbluetooth_audio_extend_factory_client \
-    libc++_shared \
-    vendor.oplus.hardware.bluetooth_audio_extend@2.1 \
+    lib-virtual-modem-protos \
     libaiboost_qnn_sr \
     libaiboost_sr \
     libaiboost_ubwc \
-    liboplusvppfilter \
-    libosie_process \
-    libosie_stub \
-    lib-virtual-modem-protos \
+    libbluetooth_audio_extend_factory_client \
+    libc++_shared \
     libcommcenterfw \
     libcommcenterutils \
     libdmtp-protos-lite \
     libdmtpclient \
     liboemcrypto \
     liboplus_service \
+    liboplusvppfilter \
+    libosie_process \
+    libosie_stub \
     libpwirisIoctlWrapper \
     libpwirisPCS \
     libpwiriscalibrate \
@@ -1240,6 +1238,7 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libwvdrmengine \
     vendor.oplus.hardware.appradio@1.0 \
+    vendor.oplus.hardware.bluetooth_audio_extend@2.1 \
     vendor.oplus.hardware.communicationcenter_compat@1.0 \
     vendor.oplus.hardware.ims@1.0 \
     vendor.oplus.hardware.radio@1.0 \
@@ -1324,7 +1323,6 @@ PRODUCT_PACKAGES += \
     shsusrd \
     slim_daemon \
     sscrpcd \
-    ssgqmigd \
     ssgtzd \
     tftp_server \
     thermal-engine \
@@ -1350,9 +1348,6 @@ PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     odm_etc_acdbdata_adsp_avs_config_acdb \
-    vendor_lib_libEGL_adreno_so \
-    vendor_lib_libGLESv2_adreno_so \
-    vendor_lib_libq3dtools_adreno_so \
     vendor_lib64_rfsa_adsp_libsns_device_mode_skel_so \
     vendor_lib64_rfsa_adsp_libsns_low_lat_stream_skel_so \
     vendor_lib64_libEGL_adreno_so \
